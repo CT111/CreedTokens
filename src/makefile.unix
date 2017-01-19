@@ -135,11 +135,11 @@ OBJS= \
     obj/scrypt-x86.o \
     obj/scrypt-x86_64.o \
     obj/chainparams.o \
-    src/luffa.o \
-    src/cubehash.o \
-    src/shavite.o \
-    src/simd.o \
-    src/echo.o
+    obj/luffa.o \
+    obj/cubehash.o \
+    obj/shavite.o \
+    obj/simd.o \
+    obj/echo.o
 
 ifeq (${USE_WALLET}, 1)
     DEFS += -DENABLE_WALLET
