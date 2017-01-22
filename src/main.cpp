@@ -964,13 +964,16 @@ int64_t GetProofOfWorkReward(int64_t nHeight, int64_t nFees)
     {
         nSubsidy = 17000000 * COIN; // Premine for coinswap from CreedTokens
     }
-        else if(nHeight > 5)
+    else if(nHeight > 5)
     {
+        if(nHeight < 300)
+        {
         nSubsidy = 0 * COIN; // Startblocks PoW Subsidy
-    }
-    else if(nHeight > 150)
-    {
-        nSubsidy = 150 * COIN; // Standard PoW Subsidy
+        }
+        else if(nHeight > 299)
+        {
+            nSubsidy = 150 * COIN; // Standard PoW Subsidy
+        }
     }
 
     LogPrint("creation", "GetProofOfWorkReward() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
