@@ -94,6 +94,7 @@ block.GetHash = 0000088a184709d7edfa8c6581e18816846347c6ed7b9b4e8782da902dd5e39f
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
         vSeeds.push_back(CDNSSeedData("199.26.184.214:7445",  "199.26.184.214"));
+		vSeeds.push_back(CDNSSeedData("67.83.117.30",  "67.83.117.30"));
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -110,7 +111,7 @@ block.GetHash = 0000088a184709d7edfa8c6581e18816846347c6ed7b9b4e8782da902dd5e39f
           }
         }
         nTargetTimespan = 10 * nTargetSpacing;
-        nLastPoWBlock = 140155; // 21023250 total PoW coins mined ~38Mill overall in supply
+        nLastPoWBlock = 200000; // 21023250 total PoW coins mined ~38Mill overall in supply
         nStartPoSBlock = 151;
     }
 

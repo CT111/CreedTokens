@@ -968,11 +968,15 @@ int64_t GetProofOfWorkReward(int64_t nHeight, int64_t nFees)
     {
         if(nHeight < 300)
         {
-        nSubsidy = 0 * COIN; // Startblocks PoW Subsidy
+                nSubsidy = 0 * COIN; // Startblocks PoW Subsidy
         }
         else if(nHeight > 299)
         {
-            nSubsidy = 150 * COIN; // Standard PoW Subsidy
+                nSubsidy = 150 * COIN; // Standard PoW Subsidy
+                if(nHeight > 140157)
+                {
+                    nSubsidy = 0 * COIN; // Standard PoW Subsidy
+                }
         }
     }
 
