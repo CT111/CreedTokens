@@ -12,7 +12,7 @@ Ticker: CREED
 
 Algorithm: Qubit PoW/PoS
 
-PoW Supply: 38,000,000
+
 
 PoW Blocks: 140,155
 

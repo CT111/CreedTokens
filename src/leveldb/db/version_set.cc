@@ -446,7 +446,7 @@ bool Version::RecordReadSample(Slice internal_key) {
       State* state = reinterpret_cast<State*>(arg);
       state->matches++;
       if (state->matches == 1) {
-        // RemCreedTokens first match.
+        // Remember first match.
         state->stats.seek_file = f;
         state->stats.seek_file_level = level;
       }

@@ -121,7 +121,7 @@ state.
 
 <p>
 Compactions for a particular level rotate through the key space.  In
-more detail, for each level L, we remCreedTokens the ending key of the last
+more detail, for each level L, we remember the ending key of the last
 compaction at level L.  The next compaction for level L will pick the
 first file that starts after this key (wrapping around to the
 beginning of the key space if there is no such file).
